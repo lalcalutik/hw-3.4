@@ -16,6 +16,7 @@ public class Faculty {
     private Long id;
     private String name;
     private String color;
+
     @OneToMany(mappedBy = "faculty")
     private Set<Student> students;
 
